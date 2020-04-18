@@ -11,42 +11,38 @@
 
 <body>
     <header>
-        <div class="row">
-            <div class="col">
-
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <h2 class="navbar-brand">ALQUILANDO.COM</h2>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Casas<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Apartamentos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Fincas</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="busqueda" aria-label="Search">
-                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">búsqueda</button>
-                            <button class="btn btn-outline-primary my-2 my-sm-0 ml-2" type="submit">Login</button>
-                            <button class="btn btn-outline-primary my-2 my-sm-0 ml-2" type="submit">Registrate</button>
-                        </form>
-                    </div>
-                </nav>
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <h1 class="navbar-brand">ALQUILANDO.COM</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Casas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Apartamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fincas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Agregar Inmueble</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a class="btn btn-primary my-2 my-sm-0 text-white" type="button">Login</a>
+                    <a class="btn btn-primary my-2 my-sm-0 ml-2 mr-3 text-white" type="button" href="registro.html">Registro</a>
+                    <input class="form-control mr-sm-2" type="search" placeholder="búsqueda" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">búsqueda</button>
+                </form>
             </div>
-        </div>
+        </nav>
     </header>
-    <main>
 
-        <section>
+    <main>
+        <section class="d-none d-md-block">
             <div class="row">
                 <div class="col">
                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -57,24 +53,24 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="http://placeimg.com/500/200/arch" class="d-block w-100" alt="img1">
+                                <img src="img/carusel1.jpg" class="d-block w-100" alt="img1">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    <h5>Fincas y casas de recreo</h5>
+                                    <p>Encuentra nuestra oferta en todo Colombia, disponibilidades 24/7</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="http://placeimg.com/500/200/nature" class="d-block w-100" alt="img2">
+                                <img src="img/carusel2.jpg" class="d-block w-100" alt="img2">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <h5>Construye tu proyecto de vida</h5>
+                                    <p>Conoce nuestros nuevos proyectos y se el primero en enterarte</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="http://placeimg.com/500/200/animals" class="d-block w-100" alt="img3">
+                                <img src="img/carusel3.jpeg" class="d-block w-100" alt="img3">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    <h5>Apartamentos para tu medida</h5>
+                                    <p>Encuentra apartamentos en arriendo o en venta en todos los sectores de la ciudad</p>
                                 </div>
                             </div>
                         </div>
@@ -91,14 +87,15 @@
             </div>
         </section>
 
-        <section>
+        <section class="container">
             <div class="row mt-3">
                 <div class="col-sm-4">
                     <div class="card">
-                        <img src="http://placeimg.com/300/200/animals" class="card-img-top" alt="card1">
+                        <img src="img/casa1.jpg" class="card-img-top" alt="card1">
                         <div class="card-body">
                             <h5 class="card-title">Casa en calasanz</h5>
-                            <p class="card-text">3 habitacioes+1baño+balcón</p>
+                            <p class="card-text">3 habitacioes 1baño+balcón y parqueadero</p>
+                            <p><span class="font-weight-bold">Venta: </span>$250'000.000</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                             <a href="#" class="btn btn-danger">ELiminar</a>
                         </div>
@@ -106,10 +103,11 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card">
-                        <img src="http://placeimg.com/300/200/nature" class="card-img-top" alt="card2">
+                        <img src="img/casa2.jpg" class="card-img-top" alt="card2">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Casa en envigado</h5>
+                            <p class="card-text">3 habitacioes 1baño+balcón y parqueadero</p>
+                            <p><span class="font-weight-bold">Venta: </span>$250'000.000</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                             <a href="#" class="btn btn-danger">ELiminar</a>
                         </div>
@@ -117,24 +115,25 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card">
-                        <img src="http://placeimg.com/300/200/tech" class="card-img-top" alt="card3">
+                        <img src="img/casa3.jpg" class="card-img-top" alt="card3">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Casa en calasanz</h5>
+                            <p class="card-text">3 habitacioes 1baño+balcón y parqueadero</p>
+                            <p><span class="font-weight-bold">Venta: </span>$250'000.000</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                             <a href="#" class="btn btn-danger">ELiminar</a>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="row mt-3">
                 <div class="col-sm-4">
                     <div class="card">
-                        <img src="http://placeimg.com/300/200/animals" class="card-img-top" alt="card4">
+                        <img src="img/casa4.jpg" class="card-img-top" alt="card4">
                         <div class="card-body">
                             <h5 class="card-title">Casa en calasanz</h5>
                             <p class="card-text">3 habitacioes+1baño+balcón</p>
+                            <p><span class="font-weight-bold">Venta: </span>$250'000.000</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                             <a href="#" class="btn btn-danger">ELiminar</a>
                         </div>
@@ -142,10 +141,11 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card">
-                        <img src="http://placeimg.com/300/200/nature" class="card-img-top" alt="card5">
+                        <img src="img/casa5.jpg" class="card-img-top" alt="card5">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Casa en calasanz</h5>
+                            <p class="card-text">3 habitacioes 1baño+balcón y parqueadero</p>
+                            <p><span class="font-weight-bold">Venta: </span>$250'000.000</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                             <a href="#" class="btn btn-danger">ELiminar</a>
                         </div>
@@ -153,28 +153,27 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card">
-                        <img src="http://placeimg.com/300/200/tech" class="card-img-top" alt="card6">
+                        <img src="img/casa6.jpg" class="card-img-top" alt="card6">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Casa en calasanz</h5>
+                            <p class="card-text">3 habitacioes 1baño+balcón y parqueadero</p>
+                            <p><span class="font-weight-bold">Venta: </span>$250'000.000</p>
                             <a href="#" class="btn btn-primary">Editar</a>
                             <a href="#" class="btn btn-danger">ELiminar</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
-
-
     </main>
+
     <footer class="bg-dark">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <p>&copy; Juan José Gallego Mesa</p>
                     <p>&#9743; 3225962363</p>
-                    <p>Medellín.Colombia</p>
+                    <p>Medellín-Colombia,2020</p>
                 </div>
             </div>
         </div>
